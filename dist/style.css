@@ -1,0 +1,80 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --Red: #C8102E;
+  --Green: #00B2A9;
+  --white: #ffffff;
+  --Gold: #F6EB61;
+}
+
+body {
+  background-color: var(--Red);
+  text-align: center;
+  padding: 10px;
+}
+.logo img{
+  width: 45%;
+  
+}
+#coach-pic{
+  width:4%;
+}
+.title,
+.options-label,
+.team-stats,
+footer {
+  color: var(--Gold);
+}
+
+.title {
+  margin: 1.3rem 0;
+}
+
+.team-stats {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  font-size: 1.3rem;
+  margin: 1.2rem 0;
+}
+
+.options-label {
+  font-size: 1.2rem;
+}
+.mouragheb-logo {
+  margin-right:100%;
+  width: 10%;
+  margin-bottom: 20px;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.cards-img{
+  max-width: 50%;
+  border-radius: 10px;
+  border: 2px var(--Gold);
+ 
+  
+}
+.player-card {
+  background-color: var(--Green);
+  padding: 1.3rem;
+  margin: 1.2rem;
+  width: 300px;
+  border-radius: 15px;
+}
+
+@media (max-width: 768px) {
+  .team-stats {
+    flex-direction: column;
+  }
+}
